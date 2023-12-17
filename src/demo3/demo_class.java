@@ -11,9 +11,9 @@ public class demo_class {
 		System.out.println(multiplication(10,20));
 		int result = add(a, b);
 		System.out.println(result);
+		System.out.println(power(2, 3));
 		System.out.println(mod(77,10));
 		System.out.println(division(30,3));
-		
 	}
 	public static int multiplication(int a,int b) {
 		return a*b;		
@@ -22,13 +22,21 @@ public class demo_class {
 	public static int add(int a,int b) {
 		return a+b;		
 	}
+
+	public static int power(int number,int power) {
+		int result;
+		result = 1;
+		for(int i = 1; i<=power; i++) {
+			result = result * number;
+		}
+		return result; 
+	}
+	
 	public static int mod(int a,int b) {
 		return a%b;		
 	}
 	
 	public static int division(int a, int b) {
-		;
 		return  a/b;
-		
 	}
 }
