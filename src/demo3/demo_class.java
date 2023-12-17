@@ -9,9 +9,14 @@ public class demo_class {
 		int b= 10;
 		System.out.println(a-b);
 		System.out.println(multiplication(10,20));
+		int result = add(a, b);
+		System.out.println(result);
 	}
 	public static int multiplication(int a,int b) {
 		return a*b;		
 	}
 
+	public static int add(int a,int b) {
+		return a+b;		
+	}
 }
