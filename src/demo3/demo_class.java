@@ -11,6 +11,7 @@ public class demo_class {
 		System.out.println(multiplication(10,20));
 		int result = add(a, b);
 		System.out.println(result);
+		System.out.println(power(2, 3));
 	}
 	public static int multiplication(int a,int b) {
 		return a*b;		
@@ -18,5 +19,14 @@ public class demo_class {
 
 	public static int add(int a,int b) {
 		return a+b;		
+	}
+
+	public static int power(int number,int power) {
+		int result;
+		result = 1;
+		for(int i = 1; i<=power; i++) {
+			result = result * number;
+		}
+		return result; 
 	}
 }
